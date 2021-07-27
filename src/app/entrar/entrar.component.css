@@ -1,0 +1,7 @@
+#img-bg{
+    background-image: url("../../assets/img/mjequi.jpg");
+    min-height:753px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
