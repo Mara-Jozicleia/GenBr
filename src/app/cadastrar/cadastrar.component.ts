@@ -34,7 +34,7 @@ export class CadastrarComponent implements OnInit {
     if (this.user.senha != this.confirmarSenha) {
       alert('A senhas estão incorretas.')
     } else {
-      this.authService.cadastrar(this.user).subscribe((resp: User) => {
+      this.authService.cadastrar(this.user).subscribe((resp: User) => {  //subscribe transforma o JSON em typeScript
         this.user = resp
         this.router.navigate(['/entrar'])
         alert('Usuário cadastrado com sucesso!')
